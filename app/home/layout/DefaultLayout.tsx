@@ -72,8 +72,8 @@ const DefaultLayout = ({ children, user }: Props) => {
               </Link>
               <hr className="border-white border-opacity-20" />
               <div className="flex flex-col gap-2  text-[#EBDFD7]">
-                <Link
-                  href="/task"
+                <div
+             
                   className="w-full  flex flex-row gap-1 py-4  border-0 outline-none hover:bg-bodydark  duration-300 ease-in-out hover:bg-white hover:bg-opacity-20 lg:pb-5 pl-5  lg:pl-11"
                 >
                   <FaTasks className=" text-slate-50 ms-5 mt-1 " size={17} />
@@ -81,7 +81,7 @@ const DefaultLayout = ({ children, user }: Props) => {
                   <span className="group relative flex items-center rounded-md px-4 font-medium text-bodydark2 ">
                     Tasks
                   </span>
-                </Link>
+                </div>
               </div>
             </div>
             <form action={logoutUser} className="h-[10%]">

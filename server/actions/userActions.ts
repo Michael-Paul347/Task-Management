@@ -14,18 +14,23 @@ const loginUser = async (formData: FormData) => {
   const password = formData.get("password") as string;
 
   try {
-    await signIn("credentials", {
+    const res = await signIn("credentials", {
       redirect: false,
       callbackUrl: "/",
       email,
       password,
     });
+
+    if (res?.error) {
+      return { error: res.error }; // Ensure a plain object is returned
+    }
+
+    return { success: true };
   } catch (error) {
-    const errorMessage = error as CredentialsSignin;
-    return errorMessage.cause;
+    return { error: "Login failed" }; // Ensure error handling returns a plain object
   }
-  redirect("/home/tasks");
 };
+
 
 //Register User
 const registerUser = async (formData: FormData) => {
@@ -55,7 +60,8 @@ const registerUser = async (formData: FormData) => {
 
 const logoutUser = async () => {
   await signOut();
-  redirect("/login");
+  return { success: true }; // Ensure a plain object is returned
 };
+
 
 export { registerUser, loginUser, logoutUser };

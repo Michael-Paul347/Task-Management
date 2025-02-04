@@ -5,7 +5,6 @@ import { Label } from "@/components/ui/label";
 import { loginUser } from "@/server/actions/userActions";
 import Link from "next/link";
 import { redirect } from "next/navigation";
-import { FaGithub } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 
 const page = async () => {
@@ -77,24 +76,9 @@ const page = async () => {
                 }}
                 className="w-[90%]"
               >
-                <Button className="w-full text-black flex items-center justify-center tracking-wide gap-3 text-sm bg-white rounded-3xl hover:bg-neutral-100 py-[1.5rem]">
+                <Button className="w-full text-black flex items-center tracking-wide gap-3 text-sm bg-white rounded-3xl hover:bg-neutral-100 py-[1.5rem]">
                   <FcGoogle className="text-2xl" />
                   Google
-                </Button>
-              </form>
-              <form
-                action={async () => {
-                  "use server";
-                  await signIn("github");
-                }}
-                className="w-[90%]"
-              >
-                <Button
-                  type="submit"
-                  className="w-full text-black flex items-center justify-center tracking-wide gap-3 text-sm  bg-white rounded-3xl hover:bg-neutral-100 py-[1.5rem]"
-                >
-                  <FaGithub className="text-2xl" />
-                  GitHub
                 </Button>
               </form>
             </div>
