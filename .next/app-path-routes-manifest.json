@@ -1,1 +1,1 @@
-{"/_not-found/page":"/_not-found","/home/[id]/page":"/home/[id]","/home/createtask/page":"/home/createtask","/login/page":"/login","/page":"/","/register/page":"/register","/api/auth/[...nextauth]/route":"/api/auth/[...nextauth]","/home/tasks/page":"/home/tasks"}
+{"/_not-found/page":"/_not-found","/home/createtask/page":"/home/createtask","/home/[id]/page":"/home/[id]","/login/page":"/login","/page":"/","/register/page":"/register","/api/auth/[...nextauth]/route":"/api/auth/[...nextauth]","/home/tasks/page":"/home/tasks"}
