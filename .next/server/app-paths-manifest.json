@@ -2,9 +2,9 @@
   "/_not-found/page": "app/_not-found/page.js",
   "/home/[id]/page": "app/home/[id]/page.js",
   "/home/createtask/page": "app/home/createtask/page.js",
-  "/home/tasks/page": "app/home/tasks/page.js",
   "/login/page": "app/login/page.js",
   "/page": "app/page.js",
   "/register/page": "app/register/page.js",
-  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js"
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/home/tasks/page": "app/home/tasks/page.js"
 }
